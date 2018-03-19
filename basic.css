@@ -7,7 +7,12 @@
 
 body {
   margin: 0;
-  background-image: url("galaxy.jpg");
+}
+
+img {
+  width: 40%;
+  float: left;
+  margin-left: 10px;
 }
 
 html, body {
@@ -15,4 +20,45 @@ html, body {
   height: 100%;
   padding: 5px;
   background-color: #ffeead;
+}
+
+p {
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 1em;
+}
+
+#nav>li {
+  width: 33%;
+  float: left;
+  position: relative;
+}
+
+.divider {
+  position: absolute;
+  right: -1px;
+  top: 2px;
+}
+
+#nav>li:first-child {
+  border-left: none;
+  border-right: none;
+  float: left;
+}
+
+#nav>li:last-child {
+  border-right: none;
+  float: right;
+}
+
+ul>a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
